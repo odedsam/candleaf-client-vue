@@ -24,7 +24,7 @@
   "dependencies": {
     "@stripe/stripe-js": "^5.10.0",
     "@vueuse/core": "^13.6.0",
-    "axios": "^1.7.9",
+    "axios": "^1.13.5",
     "lodash.debounce": "^4.0.8",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
@@ -60,7 +60,7 @@
     "typescript": "~5.7.3",
     "unplugin-icons": "^22.1.0",
     "unplugin-vue-components": "^28.4.1",
-    "vite": "^6.1.0",
+    "vite": "^6.4.1",
     "vite-plugin-vue-devtools": "^7.7.6",
     "vitest": "^3.0.8",
     "vue-tsc": "^2.2.0",
