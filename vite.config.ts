@@ -5,12 +5,10 @@ import tailwindcss from '@tailwindcss/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Components from 'unplugin-vue-components/vite';
-import vueDevTools from 'vite-plugin-vue-devtools'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [
     vue(),
-    vueDevTools(),
     tailwindcss(),
     Components({
       resolvers: [
@@ -24,7 +22,7 @@ export default defineConfig({
       compiler: 'vue3',
       autoInstall: true,
     }),
-  ],
+  ].filter(Boolean),
   base: process.env.NODE_ENV === 'production' ? process.env.VITE_BASE_PATH || '/candleaf-front' : '/',
   resolve: {
     alias: {
@@ -35,4 +33,4 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
   },
-});
+}));
