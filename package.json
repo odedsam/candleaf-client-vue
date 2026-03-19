@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.2.2",
-    "@iconify-json/tabler": "^1.2.17",
+    "@iconify-json/tabler": "^1.2.31",
     "@pinia/testing": "^1.0.0",
     "@playwright/test": "^1.52.0",
     "@tailwindcss/vite": "^4.0.6",
